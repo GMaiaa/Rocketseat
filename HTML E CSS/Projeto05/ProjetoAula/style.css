@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+
 }
 
 
@@ -14,7 +14,7 @@
   --fc-primary: hsl(var(--hue), 0%, 100%);
   --fc-secondary: hsl(var(--hue), 50%, 80%);
   --fc-secondary-dark: hsl(var(--hue), 100%,11%,1);
-  
+
   font-size: 62.5%;
   --fs-body: 1.6rem;
   --fs-heading: 4rem;
@@ -24,7 +24,7 @@
 
 body{
   font-family: var(--ff-heading);
-  
+
   background: var(--bg-primary);
   color: var(--fc-primary);
 
@@ -48,7 +48,7 @@ header{
   font-family: var(--ff-heading);
 
   text-align: center;
-  
+
   animation-name:topdown ;
   animation-duration: 700ms;
   animation-delay: 200ms;
@@ -58,7 +58,7 @@ header{
 header p{
   color: var(--fc-secondary);
   text-transform: uppercase;
-  
+
   line-height: 3.2rem;
   letter-spacing: 3px;
 
@@ -169,7 +169,7 @@ main{
 }
 
 @media(min-width:930px){
- 
+
   main{
     grid-template-areas: "colA colB colB"
     "colC colC colD";
@@ -191,7 +191,6 @@ main{
     grid-area: colD;
   }
 
-  
-  
-}
 
+
+}
