@@ -5,7 +5,7 @@
 }
 
 body {
-  background: linear-gradient(287.56deg, #C2E9FB 0%, #A1C4FD 100%);
+  background: linear-gradient(287.56deg, #FED739 0%, #eee6c7 100%);
   font-size: 1.6rem;
 
   display: grid;
@@ -24,7 +24,7 @@ input {
 button {
   font-family: 'DM Sans';
   font-style: normal;
-  background-color: #7879F1;
+  background-color: #be9f21;
   color: white;
   font-weight: bold;
   border-radius: 0 .4rem .4rem 0;
@@ -34,7 +34,7 @@ button {
 }
 
 button:hover{
-  background-color: #38388a;
+  background-color: #b69306;
 }
 
 .hide{
