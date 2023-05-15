@@ -65,6 +65,7 @@ header h1 {
   border: 1px solid #ccc;
   border-radius: .4rem 0 0 .4rem;
   padding: 0 .8rem;
+  outline: none;
 }
 
 .search button {
@@ -147,6 +148,7 @@ td.user a p {
 td .remove {
   background: none;
   border: none;
+  font-size: 2.5rem ;
 
   color: red;
   cursor: pointer;
