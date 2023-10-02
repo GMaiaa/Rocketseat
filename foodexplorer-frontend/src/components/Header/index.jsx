@@ -1,7 +1,7 @@
-import { Container, Logo } from "./styles";
+import { Container, Logo, Receipt } from "./styles";
 import { AiOutlineMenu } from "react-icons/ai";
-import { MdFoodBank } from "react-icons/md";
-import { PiReceiptBold } from "react-icons/pi"
+import { PiReceiptBold } from "react-icons/pi";
+import { Input } from "../Input";
 
 export function Header() {
   return (
@@ -10,7 +10,12 @@ export function Header() {
       <Logo>
         <p>Food Explorer</p>
       </Logo>
-      <PiReceiptBold/>
+      <Receipt>
+        <PiReceiptBold />
+        <button>
+           0 
+        </button>
+      </Receipt>
     </Container>
   );
 }
