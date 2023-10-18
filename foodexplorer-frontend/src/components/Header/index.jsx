@@ -1,28 +1,23 @@
-import { Container, Logo, Receipt } from "./styles";
-import { AiOutlineMenu } from "react-icons/ai";
+import { Container, Logout, Receipt } from "./styles";
+import Logo from "../../assets/logo.png";
+import { FiSearch } from "react-icons/fi";
+import { Input } from "../Input";
+import { LuLogOut } from "react-icons/lu";
 import { PiReceiptBold } from "react-icons/pi";
-import { useState } from "react";
-import { MenuMobile } from "../MenuMobile";
 
 export function Header() {
-  const [menuIsVisible, setMenuIsVisible] = useState(true)
-
   return (
     <Container>
-      <MenuMobile
-        menuIsVisible={menuIsVisible}
-        setMenuIsVisible={setMenuIsVisible}
-        />
-      <AiOutlineMenu />
-      <Logo>
-        <p>Food Explorer</p>
-      </Logo>
+      <img src={Logo} alt="Logo da Food Explorer" />
+      <Input placeholder="Busque por pratos ou ingredientes" icon={FiSearch} />
       <Receipt>
-        <PiReceiptBold />
-        <button>
-           0 
-        </button>
+        
+        <PiReceiptBold size={32}/>
+        <p>Pedidos (0)</p>
       </Receipt>
+      <Logout>
+        <LuLogOut/>
+      </Logout>
     </Container>
   );
 }
